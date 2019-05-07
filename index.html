@@ -1,148 +1,337 @@
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en-US"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html lang="en-US"> <!--<![endif]-->
+
 <head>
-	<title>iBoy</title>
-	<style>
-		table.map{
-			border-spacing: 0;
-			border-collapse: collapse;
-		}
-		table.map td{
-			width: 40px;
-			height: 50px;
-			border:2px solid rgb(104, 31, 31);
-			transition: all .3s;
-		}
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-		table.map td.wall{
-			background-color: black;
-		}
+<title>The Presidency | The Presidency</title>
 
-		table.map td.exit{
-			background-color: lime;
-		}
-		table.map td.player{
-			background-color: red;
-		}
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link rel="pingback" href="http://www.president.go.ke/xmlrpc.php">
+
+<!--[if lt IE 9]>
+	<script src="http://www.president.go.ke/wp-content/themes/president/js/html5.js"></script>
+<![endif]-->
+
+    <link href='http://www.president.go.ke/wp-content/themes/president/icons/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="http://www.president.go.ke/wp-content/themes/president/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="http://www.president.go.ke/wp-content/themes/president/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="http://www.president.go.ke/wp-content/themes/president/icons/favicon-16x16.png">
+    <link rel="manifest" href="http://www.president.go.ke/wp-content/themes/president/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#20388a">
+    <meta name="theme-color" content="#20388a">
 
 
-	</style>
-</head>
-<body>
+    <!-- Mobile Specific Metas
+    ================================================== -->
 
-<script>
-	class App{
-		constructor(){
-			this.map = new Game(document.body,20,10);
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <style type="text/css">
+        footer {
+            background: url(
+    http://www.president.go.ke/wp-content/themes/president/img/footer.png)            no-repeat top center;
+    </style>
+
+
+<style>.special {background: none ;} #nav_bar {padding-top: 51px; !important;}</style><link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Presidency &raquo; Feed" href="http://www.president.go.ke/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Presidency &raquo; Comments Feed" href="http://www.president.go.ke/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.president.go.ke\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='skeleton-style-css'  href='http://www.president.go.ke/wp-content/themes/president/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='skeleton-custom-css'  href='http://www.president.go.ke/wp-content/themes/president/custom.css' type='text/css' media='screen, projection' />
+<script type='text/javascript' src='http://www.president.go.ke/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://www.president.go.ke/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://www.president.go.ke/wp-content/themes/president/javascripts/modernizr-2.8.3.min.js'></script>
+<script type='text/javascript' src='http://www.president.go.ke/wp-content/themes/president/javascripts/plugins.js'></script>
+<script type='text/javascript' src='http://www.president.go.ke/wp-content/themes/president/javascripts/main.js'></script>
+<link rel='https://api.w.org/' href='http://www.president.go.ke/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.president.go.ke/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.president.go.ke/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="http://www.president.go.ke/" />
+<link rel='shortlink' href='http://www.president.go.ke/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.president.go.ke/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.president.go.ke%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.president.go.ke/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.president.go.ke%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
 		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
 	}
-
-	class Game{
-		constructor(container, width, height){
-			this.width = width;
-			this.height = height;
-			this.map = [];
-			this.createMap(container);
-			this.player = new Player(this, new Coordinates(0,0));
-			this.addEventListeners();
-		}
-
-		createMap(container){
-			this.table = document.createElement('table');
-			this.table.classList.add('map');
-
-			for (var i = 0; i < this.width; i++) this.map[i] = [];
-
-			for (var y = 0; y < this.height; y++) {
-				var tr = document.createElement('tr');
-				this.table.appendChild(tr);
-				for (var x = 0; x < this.width; x++) {
-					var td = document.createElement('td');
-					this.map[x][y] = td;
-					tr.appendChild(td);
-				}
-			}
-			container.appendChild(this.table);
-		}
-
-		addEventListeners(){
-			document.body.addEventListener('keydown', event=>{
-				switch(event.code){
-					case 'ArrowDown': this.player.move(0, 1); break;
-					case 'ArrowUp': this.player.move(0, -1); break;
-					case 'ArrowLeft': this.player.move(-1, 0); break;
-					case 'ArrowRight': this.player.move(1, 0); break;
-				}
-			});
-
-			this.table.addEventListener('click', event=>{
-				if(event.target.tagName === 'TD'){
-					event.target.classList.toggle('wall');
-				}
-			});
-			this.table.addEventListener('contextmenu',event=>{
-				if(event.target.tagName === 'TD'){
-					document.querySelectorAll('.exit').forEach(TD=>{TD.classList.remove('exit')})
-					event.target.classList.toggle('exit');
-					event.preventDefault();
-				}
-			
-			});
+})('//www.president.go.ke/?wordfence_lh=1&hid=35DCA01AF5B76B431ECA5EB9C12B52A3');
+</script>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 		
-		}
+</head>
+<body class="home page-template page-template-homepage page-template-homepage-php page page-id-27 sidebar-right">
 
-		isAvailableToMove(coordinates){
-			return coordinates.isInSize(this.width, this.height) &&
-				!this.map[coordinates.x][coordinates.y].classList.contains('wall');
-		}
-		isExit(coordinates){
-			return this.map[coordinates.x][coordinates.y].classList.contains('exit');
-		}
+</div>
+</div>
+<!--/#header-->
+<header class="transition special">
+			<div class="logo transition">
+                            <a href="http://www.president.go.ke" class="transition">
+					<img class="transition" src="http://www.president.go.ke/wp-content/themes/president/images/seal.png">
+				</a>
+			</div>
+			<div class="menutoggle"><span></span></div>
+			<nav class="maxwidth transition">
+				<ul class="row center-xs">
+					<li class="col-xs-11 col-sm-5 col-lg">
+						<a href=" http://www.president.go.ke " >THE PRESIDENCY</a>
+		<div class="menu-presidency-container"><ul id="menu-presidency" class="menu"><li id="menu-item-219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="http://www.president.go.ke/presidency/">Executive Office of the President</a></li>
+<li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="http://www.president.go.ke/office-of-the-deputy-president/">Office of the Deputy President</a></li>
+<li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><a href="http://www.president.go.ke/cabinet-secretaries/">Cabinet Secretaries</a></li>
+<li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222"><a href="http://www.president.go.ke/office-of-the-first-lady/">Office of the First Lady</a></li>
+<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223"><a href="http://www.president.go.ke/the-constitution/">The Constitution</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a href="http://www.president.go.ke/former-presidents/">Former Presidents</a></li>
+</ul></div>
+					</li>
+					<li class="col-xs-11 col-sm-5 col-lg">
+						<a target="_blank" href="https://big4.president.go.ke">THE BIG FOUR</a>
+					</li>
+					<li class="col-lg">
 
-		youwin(){
-			window.console.log("You win");
-			window.alert("You win");
-		}
-	}
+					</li>
+					<li class="col-xs-11 col-sm-5 col-lg">
+						<a target="_blank" href="https://www.delivery.go.ke/flagship">FLAGSHIP PROGRAMMES</a>
+					</li>
+					<li class="col-xs-11 col-sm-5 col-lg">
+                        <a href=" http://www.president.go.ke/briefing-room">BRIEFING ROOM</a>
+		<div class="menu-briefing-room-container"><ul id="menu-briefing-room" class="menu"><li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="http://www.president.go.ke/category/cabinet-briefs/">Cabinet Briefs</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="http://www.president.go.ke/category/latest-news/">Latest News</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230"><a href="http://www.president.go.ke/category/speeches-and-statements/">Speeches and Statements</a></li>
+</ul></div> 
+					</li>
+				</ul>
+			</nav>
 
-	class Player{
-		constructor(game, coordinates){
-			this.game = game;
-			this.coordinates = coordinates;
-		}
-		get coordinates(){return this._coordinates;}
-		set coordinates(coordinates){
-			if(typeof this._coordinates !== 'undefined'){
-				this.game.map[this.coordinates.x][this.coordinates.y].classList.remove('player');
-			}
-			this._coordinates = coordinates;
-			this.game.map[this.coordinates.x][this.coordinates.y].classList.add('player');
-		}
-		move(dx, dy){
-			var newCoordinates = new Coordinates(this.coordinates.x + dx, this.coordinates.y + dy);
-			if(this.game.isAvailableToMove(newCoordinates)){
-				this.coordinates = newCoordinates;
-			}
-			if(this.game.isExit(newCoordinates)){
-				this.game.youwin();
-			}
-		}
-	}
+		</header>    
 
-	class Coordinates{
-		constructor(x,y){
-			this.x = x;
-			this.y = y;
-		}
+<section class="heroslider" style="background-image: url(http://www.president.go.ke/wp-content/themes/president/images/state-house.jpg);">
+        <div class="maxwidth welcome">
+        <div class="row middle-lg middle-md middle-sm center-xs">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10 text">
+        <div id="homeslider">
+        <ul class="slides"> 
+            <li class="slide">You, the Kenyan people, spoke clearly. We want dignity; we want to put enough food on our tables, and we want a lower cost of living. I listened.</li>
+            <li class="slide">I came up with four responses to your concerns. I call them the Big Four: food security, affordable housing, manufacturing, and affordable healthcare for all.</li>
+            <li class="slide">I am dedicating the energy, time and resources of my Administration to the Big Four. The Big Four will create jobs, which will enable our people to meet their basic needs.</li>
+        </ul>
+        </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 first-lg first-md first-sm image"><img src=" http://www.president.go.ke/wp-content/themes/president/images/uhuru.png" /></div>
+        </div>
+        </div>
+        </section><section class="big4 maxwidth">
+        <div class="row middle-xs center-xs">
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-3">
+        
+        <hr />
+        
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <h2>Big Four <span>Action Plan</span></h2>
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-3">
+        
+        <hr />
+        
+        </div>
+        </div>
 
-		isInSize(width, height){
-			return this.x>=0 && this.x<width && this.y>=0 && this.y<height;
-		}
-	}
+        <div>
+        <ul class="accordion clearfix">
+            <li class="active" style="background-image: url(http://www.president.go.ke/wp-content/themes/president/images/big_four/manufacturing.jpg);">
+        <div class="section-title">
+        <h2 class="bigfourbeforetitle">1. <i>Enhancing Manufacturing</i></h2>
+        </div>
+        <div class="section-content" >
+        <div id="manuchart" class="chart"></div>
+        </div></li>
+            <li style="background-image: url(http://www.president.go.ke/wp-content/themes/president/images/big_four/food-security.jpg);">
+        <div class="section-title">
+        <h2 class="bigfourbeforetitle" >2. <i>Food Security and Nutrition</i></h2>
+        </div>
+        <div class="section-content">
+        <div id="foodchart" class="chart"></div>
+        </div></li>
+            <li style="background-image: url(http://www.president.go.ke/wp-content/themes/president/images/big_four/healthcare.jpg); background-repeat:no-repeat; background-size: 660x 500px;">
+        <div class="section-title">
+        <h2 class="bigfourbeforetitle">3. <i>Universal Health Coverage</i></h2>
+        </div>
+        <div class="section-content">
+        <div id="healthchart" class="chart"></div>
+        </div></li>
+            <li style="background-image: url(http://www.president.go.ke/wp-content/themes/president/images/big_four/housing.jpg);  background-repeat:no-repeat;" >
+        <div class="section-title">
+        <h2 class="bigfourbeforetitle">4. <i>Affordable Housing</i></h2>
+        </div>
+        <div class="section-content">
+        <div id="housingchart" class="chart"></div>
+        </div></li>
+        </ul>
+        </div>
+        </section><section class="updates">
+        <div class="maxwidth">
+        <div class="row middle-xs">
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-3">
+        
+        <hr />
+        
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <h2>Updates</h2> <br>
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-3">
+        
+        <hr />
+        
+        </div>
+        </div>
+            <div class="newsslider clearfix">
+				<ul class="slides">
+					<li class="slide" rel="item-1">
+						<img src="http://www.president.go.ke/wp-content/uploads/2018/05/news-1.jpg">
+					</li>
+					<li class="slide" rel="item-2">
+						<img src="http://www.president.go.ke/wp-content/uploads/2018/05/news-2.jpg">
+					</li>
+					<li class="slide" rel="item-3">
+						<img src="http://www.president.go.ke/wp-content/uploads/2018/05/news-3.jpg">
+					</li>
+				</ul>
+			</div>
+			<div class="updates maxwidth">
+				<div class="row center-xs">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 update-item active" id="item-1">
+						<h3><a href="http://www.president.go.ke/kenya-keen-on-working-with-the-global-fund-in-the-implementation-of-universal-health-coverage-president-kenyatta-says">Kenya keen on working with The Global Fund in the implementation of Universal Health Coverage, President Kenyatta says </a></h3>
+						<p class="details">May 4, 2019 In <a href="http://www.president.go.ke/category/news">Latest News</a></p>
+						<p class="excerpt">President Uhuru Kenyatta has lauded t...</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 update-item" id="item-2">
+						<h3><a href="http://www.president.go.ke/president-kenyatta-welcomes-resolution-by-world-leaders-to-form-digital-silk-road-initiative">President Kenyatta welcomes resolution by world leaders to form Digital Silk Road Initiative</a></h3>
+						<p class="details">April 27, 2019 In <a href="http://www.president.go.ke/category/news">Latest News</a></p>
+						<p class="excerpt">BEIJING (CHINA), Saturday 27th April 2019, (PSCU) – World leaders attending the second Belt and Road Initiative (BRI) in Beijing China...</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 update-item" id="item-3">
+						<h3><a href="http://www.president.go.ke/kenya-secures-shs-226-billion-in-project-financing-as-the-belt-and-road-summit-kicks-off-in-beijing">Kenya secures Shs 67 billion in project financing as the Belt and Road Summit kicks off in Beijing</a></h3>
+						<p class="details">April 26, 2019 In <a href="http://www.president.go.ke/category/news">Latest News</a></p>
+						<p class="excerpt">BEIJING (CHINA), Saturday 27th April 2019, (PSCU) – World leaders attending the second Belt and Road Initiative (BRI) in Beijing China...</p>
+					</div>
+				</div>
+			</div>        </section>
+		</div><!-- /.columns (#content) -->
+<footer>
+			<div class="links">
+				<div class="maxwidth">
+					<div class="row center-xs">
+						<div class="col-lg col-md col-sm-6 col-xs-10">
+							<p>
+                                <a href="http://www.president.go.ke"><img style="max-width: 144px;"
+                                                                                  src="http://www.president.go.ke/wp-content/themes/president/img/state-house-icon.svg"></a>
+							</p>
+							<p>
+								<a href="https://www.facebook.com/myuhurukenyatta/" target="_blank">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a href="https://twitter.com/ukenyatta" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+                                                            <a href="https://www.youtube.com/user/UhuruKenyattaTV" target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</p>
+						</div>
+						<div class="col-lg col-md col-sm-6 col-xs-10">
+							<a >LINKS</a>
+                <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu"><li id="menu-item-15198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15198"><a href="https://www.delivery.go.ke">President&#8217;s Delivery Unit</a></li>
+<li id="menu-item-15201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15201"><a href="http://www.deputypresident.go.ke">Deputy President</a></li>
+<li id="menu-item-15199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15199"><a href="http://www.mygov.go.ke">MyGov.go.ke</a></li>
+<li id="menu-item-15200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15200"><a href="http://www.president.go.ke/category/tender-notices/">Tenders</a></li>
+</ul></div>                                                        
 
-	new App();
-	
-</script>
+						</div>
+						<div class="col-lg col-md col-sm-6 col-xs-10">
+							<a >ARMS OF GOVERNMENT</a>
+                <div class="menu-arms-of-govt-container"><ul id="menu-arms-of-govt" class="menu"><li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-237"><a target="_blank" href="http://www.president.go.ke">The Executive</a></li>
+<li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a target="_blank" href="http://www.parliament.go.ke">Parliament</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-236"><a target="_blank" href="http://www.judiciary.go.ke">Judiciary</a></li>
+</ul></div>                                                           
+ 
+						</div>
+						<div class="col-lg col-md col-sm-6 col-xs-10">
+							<p><a href="https://twitter.com/UKenyatta" target="_blank"> <i style="margin-top: 0px;" class="fab fa-twitter"></i> @UKenyatta</a></p>
+							<div id="tweetslider">
+								<ul class="slides">
+
+                                    <li class="slide">Checking out and experiencing the thrill of the Renault Virtual Reality Technology at the  @Total motorshow @KICC_kenya @NanaGecaga </li><li class="slide">Technology and cars. Great exposure at the @Total Motorshow @KICC_kenya. @NanaGecaga @AdanMohamedCS </li><li class="slide">I signed into law the Appropriation Bill 2018, authorizing the  issue of Shs 1.4 trillion from the Consolidated Fund for delivery of public goods and services to Kenyans in the Financial Year 2018/19 which starts on 1st July 2018. </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="totop">
+			<i class="fas fa-angle-up"></i>
+		</div>
+
+<script type='text/javascript' src='http://www.president.go.ke/wp-content/themes/president/javascripts/superfish.js'></script>
+<script type='text/javascript' src='http://www.president.go.ke/wp-includes/js/wp-embed.min.js'></script>
 </body>
 </html>
