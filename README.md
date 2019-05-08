@@ -1,1 +1,2 @@
-Just some crazy shit!
+Just some for fun contribution and code review highly appreciated
+
