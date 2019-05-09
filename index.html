@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>The iBoy</title>
-	<h1>The Bastard!</h1>
+	<h1>The Laughing Squid!</h1>
 	<style>
-    position:middle;
+    
 		table.map{
 			border-spacing: 0;
 			border-collapse: collapse;
@@ -17,19 +16,15 @@
 			border:5px solid rgb(40, 26, 53);
 			transition: all .1s;
 		}
-
 		table.map td.wall{
 			background-color: black;
 		}
-
 		table.map td.exit{
 			background-color: lime;
 		}
 		table.map td.player{
 			background-color: red;
 		}
-
-
 	</style>
 </head>
 <body>
@@ -40,7 +35,6 @@
 			this.map = new Game(document.body,20,10);
 		}
 	}
-
 	class Game{
 		constructor(container, width, height){
 			this.width = width;
@@ -50,13 +44,10 @@
 			this.player = new Player(this, new Coordinates(0,0));
 			this.addEventListeners();
 		}
-
 		createMap(container){
 			this.table = document.createElement('table');
 			this.table.classList.add('map');
-
 			for (var i = 0; i < this.width; i++) this.map[i] = [];
-
 			for (var y = 0; y < this.height; y++) {
 				var tr = document.createElement('tr');
 				this.table.appendChild(tr);
@@ -68,7 +59,6 @@
 			}
 			container.appendChild(this.table);
 		}
-
 		addEventListeners(){
 			document.body.addEventListener('keydown', event=>{
 				switch(event.code){
@@ -78,7 +68,6 @@
 					case 'ArrowRight': this.player.move(1, 0); break;
 				}
 			});
-
 			this.table.addEventListener('click', event=>{
 				if(event.target.tagName === 'TD'){
 					event.target.classList.toggle('wall');
@@ -94,7 +83,6 @@
 			});
 		
 		}
-
 		isAvailableToMove(coordinates){
 			return coordinates.isInSize(this.width, this.height) &&
 				!this.map[coordinates.x][coordinates.y].classList.contains('wall');
@@ -102,13 +90,11 @@
 		isExit(coordinates){
 			return this.map[coordinates.x][coordinates.y].classList.contains('exit');
 		}
-
 		youwin(){
 			window.console.log("Shit, You Just Won!");
 			window.alert("Shit, You Just Won!");
 		}
 	}
-
 	class Player{
 		constructor(game, coordinates){
 			this.game = game;
@@ -132,18 +118,15 @@
 			}
 		}
 	}
-
 	class Coordinates{
 		constructor(x,y){
 			this.x = x;
 			this.y = y;
 		}
-
 		isInSize(width, height){
 			return this.x>=0 && this.x<width && this.y>=0 && this.y<height;
 		}
 	}
-
 	new App();
 	
 </script>
